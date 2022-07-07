@@ -12,7 +12,7 @@ void main(List<String> args) {
 
   ;
 
-  int sumTwoValue(int a, int b) => a + b;
+  int sumTwoValue(int a, [int b = 20]) => a + b;
 
   int n = 10;
 
@@ -23,5 +23,17 @@ void main(List<String> args) {
   }
 
   print('sum : ${sumValue(5)}');
-  print('sum : ${sumTwoValue(5, 20)}');
+  print('sum : ${sumTwoValue(5, 100)}');
+  print('sum : ${sumTwoValue(5)}');
+
+  // Recursion
+  int financial(int n) {
+    if (n == 0) {
+      return 1;
+    }
+
+    return financial(n - 1) * n;
+  }
+
+  print('value financial 5 : ${financial(5)}');
 }
