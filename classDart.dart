@@ -1,6 +1,7 @@
 // import class để sử dụng
 import 'classinDart.dart';
 import 'getterSetter.dart';
+import 'initialList.dart';
 
 void main(List<String> args) {
   // dùng Constructor để tạo 1 object
@@ -17,4 +18,9 @@ void main(List<String> args) {
   var myInfor = Human('Hieu', 20, 'Binh Tan');
   myInfor.name = "Trung Hieu";
   print(myInfor.name);
+
+  var myTest = ClassTest(12, 3.14);
+  var myObj = ClassTest(30, 4.5);
+
+  myObj.foo();
 }
