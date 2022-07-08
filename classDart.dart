@@ -2,6 +2,7 @@
 import 'classinDart.dart';
 import 'getterSetter.dart';
 import 'initialList.dart';
+import 'staticKeyWord.dart';
 
 void main(List<String> args) {
   // dùng Constructor để tạo 1 object
@@ -23,4 +24,8 @@ void main(List<String> args) {
   var myObj = ClassTest(30, 4.5);
 
   myObj.foo();
+
+  // Static
+  var a = StaticClass.a;
+  print(a);
 }
