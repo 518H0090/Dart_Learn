@@ -1,5 +1,6 @@
 // import class để sử dụng
 import 'classinDart.dart';
+import 'getterSetter.dart';
 
 void main(List<String> args) {
   // dùng Constructor để tạo 1 object
@@ -12,4 +13,8 @@ void main(List<String> args) {
   var myCat = Cat('MieuMieu', 5, 'BlackWhite');
 
   myCat.eat();
+
+  var myInfor = Human('Hieu', 20, 'Binh Tan');
+  myInfor.name = "Trung Hieu";
+  print(myInfor.name);
 }
