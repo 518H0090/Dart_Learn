@@ -16,7 +16,7 @@ void main(List<String> arguments) {
   print(a < b ? "True" : "False");
 
   var aNumber = 5;
-  var bNumber;
+  int? bNumber;
 
   print(aNumber ?? bNumber);
 
